@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/can_send.dir/src/can_send.c.o -o can_send 
