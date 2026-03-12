@@ -23,13 +23,17 @@
 ## Repo Structure
 
 ```text
-socketcan-toolkit/
-  src/
-    can_common.h   # 时间戳、hex 编解码、帧打印
-    mock_io.h      # CSV mock 读写：csv_read_frame / csv_write_frame
-    can_send.c     # --mock_out 生成报文流（demo.csv）
-    can_dump.c     # --mock 读取报文流 + --filter 过滤 + --log 录制
-  CMakeLists.txt
-  Makefile
-  README.md
-  .gitignore
+socketcan-toolkit
+├── CMakeLists.txt
+├── Makefile
+├── can_dump
+├── can_send
+├── demo.csv
+├── out.csv
+├── scripts
+└── src
+    ├── can_common.h
+    ├── can_dump.c
+    ├── can_replay.c
+    ├── can_send.c
+    └── mock_io.h
